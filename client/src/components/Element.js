@@ -1,8 +1,10 @@
 import React from "react";
 
-const Element = function() {
+const Element = function({props}) {
     return (
-        <p>Element</p>
+        <>
+        <p>{props}</p>
+        </>
     )
 }
 
