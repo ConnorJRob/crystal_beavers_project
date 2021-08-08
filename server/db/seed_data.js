@@ -12,7 +12,30 @@ db.placeholdername.insertOne(
                                     "contents": {
                                                 "title": "Earth",
                                                 "text": "that is a sweet earth"
-                                                }
+                                                },
+                                    "question-one": {
+                                                    "question-text": "string",
+
+                                                    "answers": {"one": {
+                                                                        "text": "text",
+                                                                        "value": 0
+                                                                        },
+                                                                "two": {
+                                                                        "text": "text",
+                                                                        "value": 1
+                                                                        },
+                                                                "three": {
+                                                                        "text": "text",
+                                                                        "value": 0
+                                                                        },
+                                                                "four": {
+                                                                        "text": "text",
+                                                                        "value": 0
+                                                                        }
+                                                                
+                                                                }
+
+                                    }
                                 }
                    }
             
