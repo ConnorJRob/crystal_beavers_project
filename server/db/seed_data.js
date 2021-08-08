@@ -80,6 +80,35 @@ db.placeholdername.insertOne(
 
                                     }
                                 
+                                },
+                "section-3": {
+                    "contents": {
+                                "title": "some details",
+                                "text": "some other text"
+                                },
+                    "question-one": {
+                                    "question-text": "string",
+
+                                    "answers": {
+                                                "one": {
+                                                        "text": "text",
+                                                        "value": 0
+                                                        },
+                                                "two": {
+                                                        "text": "text",
+                                                        "value": 1
+                                                        },
+                                                "three": {
+                                                        "text": "text",
+                                                        "value": 0
+                                                        },
+                                                "four": {
+                                                        "text": "text",
+                                                        "value": 0
+                                                        }
+                                                }
+
+                                    }
                                 }
                 }
             
