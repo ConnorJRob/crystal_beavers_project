@@ -1,6 +1,4 @@
-topics["topic"]["subtopic"]["lesson"]
 {
-    "_id": "lkasdfklasdflkj2345345345",
     "lesson-name": "Earth",
     "lesson": [
         "section1": {
