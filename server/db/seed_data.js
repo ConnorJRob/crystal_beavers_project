@@ -58,7 +58,9 @@ db.placeholdername.insertOne(
                                                                 }
                                                         }         
                                         }
-                    },
+                                
+                                },
+                                
                    "section_2": {
                                 "contents": {
                                                 "title": "Atmosphere And Mineral Composition",
@@ -240,4 +242,5 @@ db.placeholdername.insertOne(
                             }
                 }
     }
+        
 );
