@@ -89,7 +89,7 @@ db.placeholdername.insertOne(
                                 "text": "Earth's Neighbours"
                                 },
                     "question_one": {
-                                    "question_text": "Name planets in earth solar system!Try as many as you remember!Start with the Sun but remeber...It's not a planet!",
+                                    "question_text": "Name planets in earth solar system! Try as many as you remember!Start with the Sun but remeber...It's not a planet!",
 
                                     "answers": {
                                                 "one": {
@@ -116,11 +116,11 @@ db.placeholdername.insertOne(
                                                         "text": "Saturn",
                                                         "value": 0
                                                         },
-                                                "Seven": {
+                                                "seven": {
                                                         "text": "Uranus",
                                                         "value": 0
                                                         },
-                                                "Eight": {
+                                                "eight": {
                                                         "text": "Neptune",
                                                         "value": 0
                                                         },
