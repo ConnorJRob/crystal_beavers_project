@@ -58,6 +58,7 @@ db.placeholdername.insertOne(
                                                                 }
                                                         }         
                                         }
+                                
                                 },
                                 
                    "section_2": {
@@ -241,6 +242,6 @@ db.placeholdername.insertOne(
                                 }   
                             }
                 }
+    }
         
-        }
 );
