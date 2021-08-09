@@ -44,7 +44,7 @@ db.placeholdername.insertOne(
                                 "contents": {
                                                 "title": "Atmosphere And Mineral Composition",
                                                 "image": "an image url",
-                                                "text": "The atmosphere of the Earth consists of mostly Nitrogen and Oxygen, with trace amounts of other gases such as Argon, Carbon Dioxide and Water Vapour. The presence of plants has influenced the composition of the atmosphere due to photosynthesis - a process by which plants absorb Carbon Dioxide and release Oxygen. The upper layer of atmosphere is known as the Ozone Layer which blocks the harmful Ultraviolet radiation from the sun and permits life to flourish. Due to pollution, both naturally occuring and man made, the Ozone Layer is deteriorating. Our atmosphere facilitates a 'Greenhouse Effect'. It traps thermal energy radiated from the surface of the Earth preventing it from escaping to Space and allows our planet to maintain liveable temperatures. Without this effect the Earth would be too cold to support life",
+                                                "text": "The atmosphere of the Earth consists of mostly Nitrogen and Oxygen, with trace amounts of other gases such as Argon, Carbon Dioxide and Water Vapour. The presence of plants has influenced the composition of the atmosphere due to photosynthesis - a process by which plants absorb Carbon Dioxide and release Oxygen. The upper layer of atmosphere is known as the Ozone Layer which blocks the harmful Ultraviolet radiation from the sun and permits life to flourish. Due to pollution, both naturally occuring and man made, the Ozone Layer is deteriorating. Our atmosphere facilitates a 'Greenhouse Effect'. It traps thermal energy radiated from the surface of the Earth preventing it from escaping to Space and allows our planet to maintain liveable temperatures. Without this effect the Earth would be too cold to support life. The pollution caused by humanity has had a large impact on the state of the Atmosphere and has caused an increase in the strength of the greenhouse effect and thus an increase in global temperature. This has had profound effects - disrupting the Earth's weather patterns, as well as accelerating the melting of Polar ice leading to rising sea levels.",
                                                 "atmosphere" : {
                                                                 "oxygen": 21,
                                                                 "other": 1,
@@ -59,24 +59,24 @@ db.placeholdername.insertOne(
                                                             },
                                             },
                                 "question_one": {
-                                                "question_text": "string",
+                                                "question_text": "What is the Oxygen content of the Earth's atmosphere?",
 
                                                 "answers": {
                                                             "one": {
-                                                                    "text": "text",
+                                                                    "text": "45%",
                                                                     "value": 0
                                                                     },
                                                             "two": {
-                                                                    "text": "text",
-                                                                    "value": 1
+                                                                    "text": "16",
+                                                                    "value": 0
                                                                     },
                                                             "three": {
-                                                                    "text": "text",
+                                                                    "text": "37",
                                                                     "value": 0
                                                                     },
                                                             "four": {
-                                                                    "text": "text",
-                                                                    "value": 0
+                                                                    "text": "21",
+                                                                    "value": 1
                                                                     }
                                                             }
 
@@ -85,29 +85,45 @@ db.placeholdername.insertOne(
                                 },
                 "section_3": {
                     "contents": {
-                                "title": "some details",
-                                "text": "some other text"
+                                "title": "Solar System",
+                                "text": "Earth's Neighbours"
                                 },
                     "question_one": {
-                                    "question_text": "string",
+                                    "question_text": "Name planets in earth solar system!Try as many as you remember!Start with the Sun but remeber...It's not a planet!",
 
                                     "answers": {
                                                 "one": {
-                                                        "text": "text",
+                                                        "text": "Mercury",
                                                         "value": 0
                                                         },
                                                 "two": {
-                                                        "text": "text",
+                                                        "text": "Venus",
                                                         "value": 1
                                                         },
                                                 "three": {
-                                                        "text": "text",
+                                                        "text": "Earth",
                                                         "value": 0
                                                         },
                                                 "four": {
-                                                        "text": "text",
+                                                        "text": "Mars",
                                                         "value": 0
-                                                        }
+                                                        },
+                                                "five": {
+                                                        "text": "Jupiter",
+                                                        "value": 0
+                                                        },
+                                                "Six": {
+                                                        "text": "Saturn",
+                                                        "value": 0
+                                                        },
+                                                "Seven": {
+                                                        "text": "Uranus",
+                                                        "value": 0
+                                                        },
+                                                "Eight": {
+                                                        "text": "Neptune",
+                                                        "value": 0
+                                                        },
                                                 }
 
                                     }
