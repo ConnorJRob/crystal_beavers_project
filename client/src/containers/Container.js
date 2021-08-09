@@ -34,7 +34,7 @@ const Container = function() {
     // const lessonSectionThreeContents = <LessonContent lesson={selectedLessonSection3}/>
     // // const lessonSectionThreeQuestion = <LessonContent lesson={selectedLessonSection3}/>
     
-    //map sections of selected lesson, creating an element for each with a unique ID and pushing it to the elementList
+    //map sections of selected lesson, creating an element for each content page, and its respective questions
 
     const elementList = []
 
