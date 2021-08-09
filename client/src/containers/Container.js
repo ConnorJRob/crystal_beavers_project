@@ -22,9 +22,9 @@ const Container = function() {
     const chooseLesson = (lesson_id) => { // this function takes the lesson_id from the lessons selector when changed 
         setSelectedLesson(lessons.forEach((lesson) => {
             if (lesson_id === lesson._id){
-                setSelectedLessonSection1(lesson.lesson.sections[0]);
-                setSelectedLessonSection2(lesson.lesson.sections[1]);
-                setSelectedLessonSection3(lesson.lesson.sections[2]);
+                setSelectedLessonSection1(lesson.sections[0]); 
+                setSelectedLessonSection2(lesson.sections[1]);
+                setSelectedLessonSection3(lesson.sections[2]);
                 return lesson
             }
         })) // the filter function then returns ONLY the lesson with a matching _id from the lessons state - which becomes the selectedLesson
@@ -36,21 +36,18 @@ const Container = function() {
 
     const lessonSectionOneContents = <LessonContent lesson={selectedLessonSection1}/>
     // const lessonSectionOneQuestion = <LessonQuestion lesson={selectedLessonSection1}/>
-    // const lessonSectionTwoContents = <LessonContent lesson={selectedLessonSection2}/>
+    const lessonSectionTwoContents = <LessonContent lesson={selectedLessonSection2}/>
     // const lessonSectionTwoQuestion = <LessonQuestion lesson={selectedLessonSection2}/>
-    // const lessonSectionThreeContents = <LessonContent lesson={selectedLessonSection3}/>
+    const lessonSectionThreeContents = <LessonContent lesson={selectedLessonSection3}/>
     // const lessonSectionThreeQuestion = <LessonContent lesson={selectedLessonSection3}/>
     
-    // const elementZero = <Element props="Hello Mate, this is the first element" />;
-    // const elementOne = <Element props="This is the 2nd element mate" />;
-    // const elementTwo = <Element props="Third element now" />;
     const elementList = []
 
     elementList.push(lessonSectionOneContents);
     // elementList.push(lessonSectionOneQuestion);
-    // elementList.push(lessonSectionTwoContents);
+    elementList.push(lessonSectionTwoContents);
     // elementList.push(lessonSectionTwoQuestion);
-    // elementList.push(lessonSectionThreeContents);
+    elementList.push(lessonSectionThreeContents);
     // elementList.push(lessonSectionThreeQuestion);
 
     return (
