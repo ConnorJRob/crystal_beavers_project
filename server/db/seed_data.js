@@ -84,49 +84,87 @@ db.placeholdername.insertOne(
                                 
                                 },
                 "section_3": {
-                    "contents": {
-                                "title": "Solar System",
-                                "text": "Earth's Neighbours"
-                                },
-                    "question_one": {
-                                    "question_text": "Name planets in earth solar system! Try as many as you remember!Start with the Sun but remeber...It's not a planet!",
+                                "contents": {
+                                                "title": "Solar System",
+                                                "text": "Earth's Neighbours"
+                                                },
+                                "question_one": {
+                                                "question_text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
 
-                                    "answers": {
-                                                "one": {
-                                                        "text": "Mercury",
-                                                        "value": 0
-                                                        },
-                                                "two": {
-                                                        "text": "Venus",
-                                                        "value": 1
-                                                        },
-                                                "three": {
-                                                        "text": "Earth",
-                                                        "value": 0
-                                                        },
-                                                "four": {
-                                                        "text": "Mars",
-                                                        "value": 0
-                                                        },
-                                                "five": {
-                                                        "text": "Jupiter",
-                                                        "value": 0
-                                                        },
-                                                "Six": {
-                                                        "text": "Saturn",
-                                                        "value": 0
-                                                        },
-                                                "seven": {
-                                                        "text": "Uranus",
-                                                        "value": 0
-                                                        },
-                                                "eight": {
-                                                        "text": "Neptune",
-                                                        "value": 0
-                                                        },
-                                                }
+                                                "answers": {
+                                                                "one": {
+                                                                        "text": "Earth",
+                                                                        "value": 0
+                                                                        },
+                                                                "two": {
+                                                                        "text": "Neptune",
+                                                                        "value": 0
+                                                                        },
+                                                                "three": {
+                                                                        "text": "Pluto",
+                                                                        "value": 0
+                                                                        },
+                                                                "four": {
+                                                                        "text": "Saturn",
+                                                                        "value": 1
+                                                                        },
+                                                                "five": {
+                                                                        "text": "Mars",
+                                                                        "value": 0
+                                                                        },
+                                                                "six": {
+                                                                        "text": "Mercury",
+                                                                        "value": 0
+                                                                        },
+                                                                "seven": {
+                                                                        "text": "Jupiter",
+                                                                        "value": 0
+                                                                        },
+                                                                "eight": {
+                                                                        "text": "Venus",
+                                                                        "value": 0
+                                                                        },
+                                                                }
 
-                                    }
+                                    },
+                                    "question_two": {
+                                                        "question_text": "What about the tiny planet closest to the Sun!",
+                                                        "answers": {
+                                                                        "one": {
+                                                                                "text": "Mars",
+                                                                                "value": 1
+                                                                                },
+                                                                        "two": {
+                                                                                "text": "Earth",
+                                                                                "value": 0
+                                                                                },
+                                                                        "three": {
+                                                                                "text": "Venus",
+                                                                                "value": 0
+                                                                                },
+                                                                        "four": {
+                                                                                "text": "Mercury",
+                                                                                "value": 0
+                                                                                },
+                                                                        "five": {
+                                                                                "text": "Jupiter",
+                                                                                "value": 0
+                                                                                },
+                                                                        "six": {
+                                                                                "text": "Saturn",
+                                                                                "value": 0
+                                                                                },
+                                                                        "seven": {
+                                                                                "text": "Neptune",
+                                                                                "value": 0
+                                                                                },
+                                                                        "eight": {
+                                                                                "text": "Uranus",
+                                                                                "value": 0
+                                                                                },
+                                                                        }
+
+                            }   
                             }
                 }
         
