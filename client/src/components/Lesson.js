@@ -7,3 +7,4 @@ const Lesson = ({lesson, title}) => {
 };
 
 export default Lesson;
+

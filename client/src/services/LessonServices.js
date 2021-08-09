@@ -1,6 +1,6 @@
 const baseURL = "http://localhost:5000/api/placeholdername/"
 
-export const getLessons = () => {
+export const getLessons = () => { // activate a get request on the baseURL
     return fetch(baseURL)
-    .then(res => res.json())
+    .then(res => res.json()) // returns all the data as json
 };
