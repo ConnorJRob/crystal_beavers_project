@@ -18,6 +18,9 @@ const Container = function() {
         })
     }, []);
 
+    const chooseLesson = (lesson_id) => { // this function takes the lesson_id from the lessons selector when changed 
+        setSelectedLesson(lessons.filter(lesson => lesson_id === lesson._id)) // the filter function then returns ONLY the lesson with a matching _id from the lessons state - which becomes the selectedLesson
+    };
 
     const incrementState = function() { 
         setElementState(elementState + 1);//this function increments the element state which allows us to progress through the lesson
@@ -34,14 +37,17 @@ const Container = function() {
 
     const elementList = []
 
-    const sectionGenerator = function(lesson) {
-        lesson.sections.forEach((section, index) => {
+    const sectionGenerator = function() {
+        if (selectedLesson) {
+        console.log(selectedLesson[0].sections);
+        selectedLesson[0].sections.forEach((section, index) => {
             const contents = <LessonContent lesson={section} />
-            elementList.push(contents)
-        })
-    }
+            elementList.push(contents);
+            });
+        };
+    };
 
-    sectionGenerator(selectedLesson)
+    sectionGenerator();
     
     
 
