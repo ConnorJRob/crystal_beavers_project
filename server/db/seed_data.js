@@ -84,7 +84,7 @@ db.placeholdername.insertOne(
                                                                 "iron_oxide": 6,
                                                                 "magnesia": 5
                                                             },
-                                            },
+                                            
                                 "questions": [
                                                 {
                                                     "question_text": "What is the Oxygen content of the Earth's atmosphere?",
@@ -110,7 +110,7 @@ db.placeholdername.insertOne(
 
                                                 }
                                             ]
-                                },
+                                        },
                     "section_3": {
                                     "contents": {
                                                     "title": "Solar System",
@@ -244,6 +244,5 @@ db.placeholdername.insertOne(
                             ]   
                             }
                 }
-    
-        
+        }
 );
