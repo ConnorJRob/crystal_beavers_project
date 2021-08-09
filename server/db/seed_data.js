@@ -2,61 +2,63 @@ use project;
 db.dropDatabase();
 
 db.placeholdername.insertOne(
+
     {
         "lesson_title": "Earth",
 
         "background_image": "https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1680&fit=bounds",
 
         "lesson": {
-
                     "section_1": {
                                     "contents": {
                                                 "title": "Overview",
                                                 "text": "Earth is the third planet from the sun and is to our knowledge the only planet with life. The majority of the Earth's surface - around 70% - is covered in water. The other 30% is made up of large continental land masses and islands. Both of these environments support a vast array of both organic and plant lifeforms. Most of the earths Northern and Southern polar regions are covered in ice caps which support unique species."
                                                 },
 
-                                    "question_one": {
-                                                    "question_text": "What percentage of the Earth's surface does water make up?",
+                                    "questions": [
+                                                    { 
+                                                        "question_text": "What percentage of the Earth's surface does water make up?",
 
-                                                    "answers": {
-                                                                "one": {
-                                                                        "text": "55%",
-                                                                        "value": 0
-                                                                        },
-                                                                "two": {
-                                                                        "text": "70%",
-                                                                        "value": 1
-                                                                        },
-                                                                "three": {
-                                                                        "text": "95%",
-                                                                        "value": 0
-                                                                        },
-                                                                "four": {
-                                                                        "text": "17%",
-                                                                        "value": 0
-                                                                        }
-                                                                }
-
-                                                    },
-
-                                        "question_two": {
-                                                        "question_text": "What species can be found at the Earth's Polar region?",
                                                         "answers": {
-                                                                "one": {
-                                                                        "text": "Golden Eagle",
-                                                                        "value": 0
-                                                                },
-                                                                "two": {
-                                                                        "text": "Polar Bear",
-                                                                        "value": 1
-                                                                },
-                                                                "three": {
-                                                                        "text": "Zebra",
-                                                                        "value": 0
-                                                                }
-                                                        }         
-                                        }
-                                
+                                                                    "one": {
+                                                                            "text": "55%",
+                                                                            "value": 0
+                                                                            },
+                                                                    "two": {
+                                                                            "text": "70%",
+                                                                            "value": 1
+                                                                            },
+                                                                    "three": {
+                                                                            "text": "95%",
+                                                                            "value": 0
+                                                                            },
+                                                                    "four": {
+                                                                            "text": "17%",
+                                                                            "value": 0
+                                                                            }
+                                                                    }
+
+                                                        },
+
+                                                    {
+                                                        "question_text": "What species can be found at the Earth's Polar region?",
+                                                        
+                                                        "answers": {
+                                                                    "one": {
+                                                                            "text": "Golden Eagle",
+                                                                            "value": 0
+                                                                    },
+                                                                    "two": {
+                                                                            "text": "Polar Bear",
+                                                                            "value": 1
+                                                                    },
+                                                                    "three": {
+                                                                            "text": "Zebra",
+                                                                            "value": 0
+                                                                    }
+                                                                }         
+                                                    }
+                                                ]
                                 },
                                 
                    "section_2": {
@@ -81,125 +83,124 @@ db.placeholdername.insertOne(
                                                                 "magnesia": 5
                                                             },
                                             },
-                                "question_one": {
+                                "questions": [
+                                                {
+                                                    "question_text": "What is the Oxygen content of the Earth's atmosphere?",
 
-                                                "question_text": "What is the Oxygen content of the Earth's atmosphere?",
-
-                                                "answers": {
-                                                            "one": {
-                                                                    "text": "45%",
-                                                                    "value": 0
-                                                                    },
-                                                            "two": {
-                                                                    "text": "16%",
-                                                                    "value": 0
-                                                                    },
-                                                            "three": {
-                                                                    "text": "37%",
-                                                                    "value": 0
-                                                                    },
-                                                            "four": {
-                                                                    "text": "21%",
-                                                                    "value": 1
-                                                                    }
-                                                            }
-
-                                    }
-                                
-                                },
-                "section_3": {
-                                "contents": {
-                                                "title": "Solar System",
-                                                "text": "Earth's Neighbours"
-                                                },
-                                "question_one": {
-                                                "question_text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
-
-                                                "answers": {
+                                                    "answers": {
                                                                 "one": {
-                                                                        "text": "Earth",
+                                                                        "text": "45%",
                                                                         "value": 0
                                                                         },
                                                                 "two": {
-                                                                        "text": "Neptune",
+                                                                        "text": "16%",
                                                                         "value": 0
                                                                         },
                                                                 "three": {
-                                                                        "text": "Pluto",
+                                                                        "text": "37%",
                                                                         "value": 0
                                                                         },
                                                                 "four": {
-                                                                        "text": "Saturn",
+                                                                        "text": "21%",
                                                                         "value": 1
-                                                                        },
-                                                                "five": {
-                                                                        "text": "Mars",
-                                                                        "value": 0
-                                                                        },
-                                                                "six": {
-                                                                        "text": "Mercury",
-                                                                        "value": 0
-                                                                        },
-                                                                "seven": {
-                                                                        "text": "Jupiter",
-                                                                        "value": 0
-                                                                        },
-                                                                "eight": {
-                                                                        "text": "Venus",
-                                                                        "value": 0
-                                                                        },
-                                                                }
-
-                                    },
-
-                                    "question_two": {
-
-                                                "question_text": "What about the tiny planet closest to the Sun!",
-
-                                                "answers": {
-                                                                "one": {
-                                                                        "text": "Mars",
-                                                                        "value": 1
-                                                                        },
-
-                                                                "two": {
-                                                                        "text": "Earth",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "three": {
-                                                                        "text": "Venus",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "four": {
-                                                                        "text": "Mercury",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "five": {
-                                                                        "text": "Jupiter",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "six": {
-                                                                        "text": "Saturn",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "seven": {
-                                                                        "text": "Neptune",
-                                                                        "value": 0
-                                                                        },
-
-                                                                "eight": {
-                                                                        "text": "Uranus",
-                                                                        "value": 0
                                                                         }
                                                                 }
-                                                        },
-                                        "question_three": {
 
+                                                }
+                                            ]
+                                },
+                    "section_3": {
+                                    "contents": {
+                                                    "title": "Solar System",
+                                                    "text": "Earth's Neighbours"
+                                                    },
+                                    "questions": [
+                                                    {
+                                                    "question_text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
+
+                                                    "answers": {
+                                                                    "one": {
+                                                                            "text": "Earth",
+                                                                            "value": 0
+                                                                            },
+                                                                    "two": {
+                                                                            "text": "Neptune",
+                                                                            "value": 0
+                                                                            },
+                                                                    "three": {
+                                                                            "text": "Pluto",
+                                                                            "value": 0
+                                                                            },
+                                                                    "four": {
+                                                                            "text": "Saturn",
+                                                                            "value": 1
+                                                                            },
+                                                                    "five": {
+                                                                            "text": "Mars",
+                                                                            "value": 0
+                                                                            },
+                                                                    "six": {
+                                                                            "text": "Mercury",
+                                                                            "value": 0
+                                                                            },
+                                                                    "seven": {
+                                                                            "text": "Jupiter",
+                                                                            "value": 0
+                                                                            },
+                                                                    "eight": {
+                                                                            "text": "Venus",
+                                                                            "value": 0
+                                                                            },
+                                                                    }
+                                                                        
+                                                    },
+                                                    {
+
+                                                    "question_text": "What about the tiny planet closest to the Sun!",
+
+                                                    "answers": {
+                                                                    "one": {
+                                                                            "text": "Mars",
+                                                                            "value": 1
+                                                                            },
+
+                                                                    "two": {
+                                                                            "text": "Earth",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "three": {
+                                                                            "text": "Venus",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "four": {
+                                                                            "text": "Mercury",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "five": {
+                                                                            "text": "Jupiter",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "six": {
+                                                                            "text": "Saturn",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "seven": {
+                                                                            "text": "Neptune",
+                                                                            "value": 0
+                                                                            },
+
+                                                                    "eight": {
+                                                                            "text": "Uranus",
+                                                                            "value": 0
+                                                                            }
+                                                                    }
+                                                    },
+                                                    {
                                                 "question_text": "And what about the one furthest from the sun!",
                                                 
                                                 "answers": {
@@ -235,9 +236,10 @@ db.placeholdername.insertOne(
                                                                         "text": "Earth",
                                                                         "value": 0
                                                                         }
-                                                                }
+                                                            }
 
-                                }   
+                                }
+                            ]   
                             }
                 }
     }
