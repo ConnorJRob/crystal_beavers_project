@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import LessonSelector  from "../components/LessonSelector.js";
 import LessonContent from "../components/LessonContent.js";
+import LessonQuestion from "../components/LessonQuestion.js";
 import {getLessons} from "../services/LessonServices.js";
 
 const Container = function() {
@@ -38,18 +39,24 @@ const Container = function() {
     const elementList = []
 
     const sectionGenerator = function() {
+
         if (selectedLesson) {
-        console.log(selectedLesson[0].sections);
-        selectedLesson[0].sections.forEach((section, index) => {
-            const contents = <LessonContent lesson={section} />
-            elementList.push(contents);
-            });
+            selectedLesson[0].sections
+                .forEach((section, index) => {
+                    const content = <LessonContent contents={section.contents} />
+                    elementList.push(content);
+                    const question = <LessonQuestion questions={section.questions} />
+                    // console.log(section.questions)
+                    // console.log("-------------")
+                    elementList.push(question);
+                    // console.log(elementList)
+                })
+            
+            };
         };
-    };
+    
 
     sectionGenerator();
-    
-    
 
     return (
         <>
