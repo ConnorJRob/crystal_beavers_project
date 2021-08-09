@@ -12,26 +12,28 @@ db.placeholdername.insertOne(
                     "section-1": {
                                     "contents": {
                                                 "title": "Overview",
-                                                "text": "that is a sweet earth"
-                                                },
+                                                "text": "Earth is the third planet from the sun and is to our knowledge the only planet with life. The majority of the Earth's surface - around 70% - is covered in water. The other 30% is made up of large continental land masses and islands. Both of these environments support a vast array of both organic and plant lifeforms. Most of the earths Northern and Southern polar regions are covered in ice caps which support unique species."
+                                                }
+                                },
+
                                     "question-one": {
-                                                    "question-text": "string",
+                                                    "question-text": "What percentage of the Earth's surface does water make up?",
 
                                                     "answers": {
                                                                 "one": {
-                                                                        "text": "text",
+                                                                        "text": "55%",
                                                                         "value": 0
                                                                         },
                                                                 "two": {
-                                                                        "text": "text",
+                                                                        "text": "70%",
                                                                         "value": 1
                                                                         },
                                                                 "three": {
-                                                                        "text": "text",
+                                                                        "text": "95%",
                                                                         "value": 0
                                                                         },
                                                                 "four": {
-                                                                        "text": "text",
+                                                                        "text": "17%",
                                                                         "value": 0
                                                                         }
                                                                 }
