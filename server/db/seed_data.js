@@ -13,8 +13,7 @@ db.placeholdername.insertOne(
                                     "contents": {
                                                 "title": "Overview",
                                                 "text": "Earth is the third planet from the sun and is to our knowledge the only planet with life. The majority of the Earth's surface - around 70% - is covered in water. The other 30% is made up of large continental land masses and islands. Both of these environments support a vast array of both organic and plant lifeforms. Most of the earths Northern and Southern polar regions are covered in ice caps which support unique species."
-                                                }
-                                },
+                                                },
 
                                     "question_one": {
                                                     "question_text": "What percentage of the Earth's surface does water make up?",
@@ -40,6 +39,7 @@ db.placeholdername.insertOne(
 
                                                     }
                                 },
+                                
                    "section_2": {
                                 "contents": {
                                                 "title": "Atmosphere And Mineral Composition",
@@ -67,15 +67,15 @@ db.placeholdername.insertOne(
                                                                     "value": 0
                                                                     },
                                                             "two": {
-                                                                    "text": "16",
+                                                                    "text": "16%",
                                                                     "value": 0
                                                                     },
                                                             "three": {
-                                                                    "text": "37",
+                                                                    "text": "37%",
                                                                     "value": 0
                                                                     },
                                                             "four": {
-                                                                    "text": "21",
+                                                                    "text": "21%",
                                                                     "value": 1
                                                                     }
                                                             }
@@ -130,5 +130,5 @@ db.placeholdername.insertOne(
                             }
                 }
         
-    
+        }
 );
