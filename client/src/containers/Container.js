@@ -10,6 +10,9 @@ const Container = function() {
     const [elementState, setElementState] = useState(0); //sets up a state that tracks lesson stages - modifying this allows us to iterate through them
     const [lessons, setLessons] = useState([]); // this state stores the data from our api (lessons collection)
     const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjuection with the LessonSelector to define the currently selected lesson
+    const [selectedLessonSection1, setSelectedLessonSection1] = useState(null); 
+    const [selectedLessonSection2, setSelectedLessonSection2] = useState(null); 
+    const [selectedLessonSection3, setSelectedLessonSection3] = useState(null); 
 
     useEffect(() => { // this runs when the page loads
         getLessons() // it calls the get Lessons function from LessonServices
@@ -20,14 +23,17 @@ const Container = function() {
 
     const chooseLesson = (lesson_id) => { // this function takes the lesson_id from the lessons selector when changed 
         setSelectedLesson(lessons.filter(lesson => lesson_id === lesson._id)) // the filter function then returns ONLY the lesson with a matching _id from the lessons state - which becomes the selectedLesson
+        setSelectedLessonSection1(lessons[0]);
+        setSelectedLessonSection2(lessons[1]);
+        setSelectedLessonSection3(lessons[2]);
     };
 
     const incrementState = function() { 
         setElementState(elementState + 1);//this function increments the element state which allows us to progress through the lesson
     }
 
-    const lessonSectionOneContents = <LessonContent lesson={selectedLesson}/>
-    // const lessonSectionOneQuestion
+    const lessonSectionOneContents = <LessonContent lesson={selectedLessonSection1}/>
+    const lessonSectionOneQuestion = <LessonQuestion lesson={selectedLessonSection1}/>
     // const lessonSectionTwoContents
     // const lessonSectionTwoQuestion
     // const lessonSectionThreeContents
