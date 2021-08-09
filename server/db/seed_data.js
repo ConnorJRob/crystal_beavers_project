@@ -10,12 +10,12 @@ db.placeholdername.insertOne(
         "lesson": {
                 
                     "title": "Earth",
-
                     "section_1": {
                                     "contents": {
                                                 "title": "Overview",
                                                 "text": "Earth is the third planet from the sun and is to our knowledge the only planet with life. The majority of the Earth's surface - around 70% - is covered in water. The other 30% is made up of large continental land masses and islands. Both of these environments support a vast array of both organic and plant lifeforms. Most of the earths Northern and Southern polar regions are covered in ice caps which support unique species."
                                                 },
+                                
 
                                     "question_one": {
                                                     "question_text": "What percentage of the Earth's surface does water make up?",
@@ -58,8 +58,7 @@ db.placeholdername.insertOne(
                                                                 }
                                                         }         
                                         }
-                                },
-                                
+                    },
                    "section_2": {
                                 "contents": {
                                                 "title": "Atmosphere And Mineral Composition",
@@ -69,9 +68,10 @@ db.placeholdername.insertOne(
                                                 "text": "The atmosphere of the Earth consists of mostly Nitrogen and Oxygen, with trace amounts of other gases such as Argon, Carbon Dioxide and Water Vapour. The presence of plants has influenced the composition of the atmosphere due to photosynthesis - a process by which plants absorb Carbon Dioxide and release Oxygen. The upper layer of atmosphere is known as the Ozone Layer which blocks the harmful Ultraviolet radiation from the sun and permits life to flourish. Due to pollution, both naturally occuring and man made, the Ozone Layer is deteriorating. Our atmosphere facilitates a 'Greenhouse Effect'. It traps thermal energy radiated from the surface of the Earth preventing it from escaping to Space and allows our planet to maintain liveable temperatures. Without this effect the Earth would be too cold to support life. The pollution caused by humanity has had a large impact on the state of the Atmosphere and has caused an increase in the strength of the greenhouse effect and thus an increase in global temperature. This has had profound effects - disrupting the Earth's weather patterns, as well as accelerating the melting of Polar ice leading to rising sea levels.",
 
                                                 "atmosphere" : {
-                                                                "oxygen": 21,
-                                                                "other": 1,
-                                                                "nitrogen": 78
+                                                        "oxygen": 21,
+                                                        "other": 1,
+                                                        "nitrogen": 78
+                                                        },
                                                                 },
 
                                                 "minerals" : {
@@ -81,10 +81,8 @@ db.placeholdername.insertOne(
                                                                 "iron_oxide": 6,
                                                                 "magnesia": 5
                                                             },
-                                            },
                                 "question_one": {
-
-                                                "question_text": "What is the Oxygen content of the Earth's atmosphere?",
+                                                "question_text": "string",
 
                                                 "answers": {
                                                             "one": {
@@ -109,12 +107,12 @@ db.placeholdername.insertOne(
                                 
                                 },
                 "section_3": {
-                                "contents": {
-                                                "title": "Solar System",
-                                                "text": "Earth's Neighbours"
-                                                },
-                                "question_one": {
-                                                "question_text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
+                    "contents": {
+                                "title": "some details",
+                                "text": "some other text"
+                                },
+                    "question_one": {
+                                    "question_text": "string",
 
                                                 "answers": {
                                                                 "one": {
@@ -241,6 +239,5 @@ db.placeholdername.insertOne(
                                 }   
                             }
                 }
-        
-        }
+    }
 );
