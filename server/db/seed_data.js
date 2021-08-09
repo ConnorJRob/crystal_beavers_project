@@ -238,10 +238,9 @@ db.placeholdername.insertOne(
                                                                         }
                                                             }
 
+                                                    }
+                                                ]   
                                 }
-                            ]   
-                            }
                 }
-    }
-        
+    }      
 );
