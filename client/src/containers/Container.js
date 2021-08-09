@@ -18,8 +18,7 @@ const Container = function() {
     }, []);
 
     const chooseLesson = (lesson_id) => {
-
-
+        setSelectedLesson(lessons.filter(lesson => lesson_id === lesson._id))
     };
 
     const incrementState = function() {
