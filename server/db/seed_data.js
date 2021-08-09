@@ -8,7 +8,9 @@ db.placeholdername.insertOne(
         "background_image": "https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1680&fit=bounds",
 
         "lesson": {
+                
                     "title": "Earth",
+
                     "section_1": {
                                     "contents": {
                                                 "title": "Overview",
@@ -37,7 +39,25 @@ db.placeholdername.insertOne(
                                                                         }
                                                                 }
 
-                                                    }
+                                                    },
+                                                    
+                                        "question_two": {
+                                                        "question_text": "What species can be found at the Earth's Polar region",
+                                                        "answers": {
+                                                                "one": {
+                                                                        "text": "Golden Eagle",
+                                                                        "value": 0
+                                                                },
+                                                                "two": {
+                                                                        "text": "Polar Bear",
+                                                                        "value": 1
+                                                                },
+                                                                "three": {
+                                                                        "text": "Zebra",
+                                                                        "value": 0
+                                                                }
+                                                        }         
+                                        }
                                 },
                                 
                    "section_2": {
@@ -161,10 +181,47 @@ db.placeholdername.insertOne(
                                                                         "eight": {
                                                                                 "text": "Uranus",
                                                                                 "value": 0
-                                                                                },
+                                                                                }
                                                                         }
+                                                                },
+                                                                        "question_three": {
+                                                                                "question_text": "And what about the one furthest from the sun!",
+                                                                                "answers": {
+                                                                                                "one": {
+                                                                                                        "text": "Mercury",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "two": {
+                                                                                                        "text": "Uranus",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "three": {
+                                                                                                        "text": "Venus",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "four": {
+                                                                                                        "text": "Mars",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "five": {
+                                                                                                        "text": "Neptune",
+                                                                                                        "value": 1
+                                                                                                        },
+                                                                                                "six": {
+                                                                                                        "text": "Saturn",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "seven": {
+                                                                                                        "text": "Jupiter",
+                                                                                                        "value": 0
+                                                                                                        },
+                                                                                                "eight": {
+                                                                                                        "text": "Earth",
+                                                                                                        "value": 0
+                                                                                                        }
+                                                                                                }
 
-                            }   
+                                }   
                             }
                 }
         
