@@ -42,7 +42,7 @@ db.placeholdername.insertOne(
                                                     },
 
                                         "question_two": {
-                                                        "question_text": "What species can be found at the Earth's Polar region",
+                                                        "question_text": "What species can be found at the Earth's Polar region?",
                                                         "answers": {
                                                                 "one": {
                                                                         "text": "Golden Eagle",
