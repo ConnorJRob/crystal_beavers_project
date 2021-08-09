@@ -19,7 +19,7 @@ db.placeholdername.insertOne(
 
                                     "questions": [
                                                     { 
-                                                        "question_text": "What percentage of the Earth's surface does water make up?",
+                                                        "text": "What percentage of the Earth's surface does water make up?",
 
                                                         "answers": [
                                                                 {
@@ -43,7 +43,7 @@ db.placeholdername.insertOne(
                                                         },
 
                                                     {
-                                                        "question_text": "What species can be found at the Earth's Polar region?",
+                                                        "text": "What species can be found at the Earth's Polar region?",
                                                         
                                                         "answers": [
                                                                     {
@@ -75,7 +75,7 @@ db.placeholdername.insertOne(
                                             
                                 "questions": [
                                                 {
-                                                    "question_text": "What is the Oxygen content of the Earth's atmosphere?",
+                                                    "text": "What is the Oxygen content of the Earth's atmosphere?",
 
                                                     "answers": [
                                                                 {
@@ -106,7 +106,7 @@ db.placeholdername.insertOne(
                                                     },
                                         "questions": [
                                                     {
-                                                    "question_text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
+                                                    "text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
 
                                                     "answers": [
                                                                 {
@@ -145,7 +145,7 @@ db.placeholdername.insertOne(
                                                                         
                                                     },
                                                     {
-                                                    "question_text": "What about the tiny planet closest to the Sun!",
+                                                    "text": "What about the tiny planet closest to the Sun!",
 
                                                     "answers": [
                                                                 {
@@ -184,7 +184,7 @@ db.placeholdername.insertOne(
                                                         },
                                                     
                                                 {
-                                                "question_text": "And what about the one furthest from the sun!",
+                                                "text": "And what about the one furthest from the sun!",
                                                 
                                                 "answers": [
                                                                 {
