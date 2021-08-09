@@ -8,8 +8,8 @@ const lessonContent = ({lesson}) => {
 
     return(
         <>
-        {/* <h2>{lesson.lesson.section_1.contents.title}</h2>
-        <p>{lesson.lesson.section_1.contents.text}</p> */}
+        <h2>{lesson.contents.title}</h2>
+        <p>{lesson.contents.text}</p>
         </>
     )
 }
