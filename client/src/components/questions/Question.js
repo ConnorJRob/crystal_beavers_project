@@ -1,11 +1,12 @@
 import React from "react";
 
-const Question = function() {
+const Question = function({question}) {
+
     return(
         <>
-        <p>Question</p>
+        <p>{question.text}</p>
         </>
     )
 }
 
-export default QuestionContainer;
+export default Question;

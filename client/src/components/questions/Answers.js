@@ -1,11 +1,11 @@
 import React from "react";
 
-const Answer = function() {
+const Answers = function({answers}) {
     return(
         <>
-        <p>Answer</p>
+        <p>{answers[0].text}</p>
         </>
     )
 }
 
-export default Answer;
+export default Answers;
