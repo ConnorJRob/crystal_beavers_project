@@ -29,7 +29,6 @@ const Container = function() {
     };
 
     const questionSubmit = function (answersValue) {
-        setElementState(elementState + 1);
         setQuestionScore(questionScore + answersValue);
     }
 
@@ -46,8 +45,11 @@ const Container = function() {
                     const content = <LessonContent contents={section.contents} />
                     elementList.push(content);
 
-                    const question = <QuestionContainer questions={section.questions} />
-                    elementList.push(question);
+                    section.questions.forEach(question => {
+                        const questionToAdd = <QuestionContainer question={question}/>
+                        elementList.push(questionToAdd);
+                    })
+                    
                 })            
             };
         };
