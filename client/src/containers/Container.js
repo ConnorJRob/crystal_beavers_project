@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import LessonSelector  from "../components/LessonSelector.js";
 import LessonContent from "../components/LessonContent.js";
-import LessonQuestion from "../components/LessonQuestion.js";
+import QuestionContainer from "../components/questions/QuestionContainer.js";
 import {getLessons} from "../services/LessonServices.js";
 
 const Container = function() {
@@ -46,14 +46,14 @@ const Container = function() {
                     const content = <LessonContent contents={section.contents} />
                     elementList.push(content);
 
-                    const question = <LessonQuestion questions={section.questions} />
+                    const question = <QuestionContainer questions={section.questions} />
                     elementList.push(question);
                 })            
             };
         };
         
     //Changes made:
-    //added LessonQuestion
+    //added QuestionContainer
     //refactored LessonContent props and subsequent references
     //SUGGESTION: Add a "summary" page after all the sections to display the score?
     //SUGGESTION: This could be expanded later on to display which questions were right and wrong
