@@ -8,7 +8,7 @@ const LessonQuestion = function({questions}) {
         return (
                 <>
                     <h3>{question.text}</h3>
-                    <p>Answer Area Goes Here!</p>
+                    <p>{question.answers[0].text}</p>
                 </>
                 )
     })

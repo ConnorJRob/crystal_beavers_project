@@ -42,15 +42,16 @@ const Container = function() {
 
         if (selectedLesson) {
             selectedLesson[0].sections
-                .forEach((section, index) => {
+                .forEach((section) => {
                     const content = <LessonContent contents={section.contents} />
                     elementList.push(content);
+
                     const question = <LessonQuestion questions={section.questions} />
                     elementList.push(question);
-                })
-            
+                })            
             };
         };
+        
     //Changes made:
     //added LessonQuestion
     //refactored LessonContent props and subsequent references
