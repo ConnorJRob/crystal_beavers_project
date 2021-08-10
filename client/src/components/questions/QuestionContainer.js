@@ -1,15 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import Question from "./Question.js";
 import Answers from "./Answers.js";
 
-const QuestionContainer= function({questions}) {
+const QuestionContainer= function({questions, questionSubmit}) {
+
+    const [sectionScore, setSectionScore] = useState(0);
+
+    const handleChange = function (event) {
+        setSectionScore(sectionScore + event.target.value);
+    }
 
     const listOfQuestions = questions.map((question) => {
 
         return(
             <>
             <Question question={question}/>
-            <Answers answers={question.answers}/>
+            <Answers answers={question.answers} handleChange={handleChange}/>
             </>
         )
     })
