@@ -2,8 +2,6 @@ import React from "react";
 
 const LessonQuestion = function({questions}) {
 
-    console.log(questions[0].text)
-
     const questionDisplay = questions.map((question) => {
         return (
                 <>
