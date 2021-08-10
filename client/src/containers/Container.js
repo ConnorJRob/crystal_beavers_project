@@ -1,8 +1,7 @@
 import React, {useState, useEffect} from "react";
-import Element from "../components/Element.js";
-import LessonElement from "../components/LessonElement.js";
 import LessonSelector  from "../components/LessonSelector.js";
 import LessonContent from "../components/LessonContent.js";
+import LessonQuestion from "../components/LessonQuestion.js";
 import {getLessons} from "../services/LessonServices.js";
 
 const Container = function() {
@@ -10,9 +9,8 @@ const Container = function() {
     const [elementState, setElementState] = useState(0); //sets up a state that tracks lesson stages - modifying this allows us to iterate through them
     const [lessons, setLessons] = useState([]); // this state stores the data from our api (lessons collection)
     const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjuection with the LessonSelector to define the currently selected lesson
-    const [selectedLessonSection1, setSelectedLessonSection1] = useState(null); 
-    const [selectedLessonSection2, setSelectedLessonSection2] = useState(null); 
-    const [selectedLessonSection3, setSelectedLessonSection3] = useState(null); 
+    const [lessonElements, setLessonElements] = useState([])
+
 
     useEffect(() => { // this runs when the page loads
         getLessons() // it calls the get Lessons function from LessonServices
@@ -23,37 +21,50 @@ const Container = function() {
 
     const chooseLesson = (lesson_id) => { // this function takes the lesson_id from the lessons selector when changed 
         setSelectedLesson(lessons.filter(lesson => lesson_id === lesson._id)) // the filter function then returns ONLY the lesson with a matching _id from the lessons state - which becomes the selectedLesson
-        setSelectedLessonSection1(lessons[0]);
-        setSelectedLessonSection2(lessons[1]);
-        setSelectedLessonSection3(lessons[2]);
     };
 
     const incrementState = function() { 
         setElementState(elementState + 1);//this function increments the element state which allows us to progress through the lesson
     }
 
-    const lessonSectionOneContents = <LessonContent lesson={selectedLessonSection1}/>
-    const lessonSectionOneQuestion = <LessonQuestion lesson={selectedLessonSection1}/>
-    // const lessonSectionTwoContents
-    // const lessonSectionTwoQuestion
-    // const lessonSectionThreeContents
-    // const lessonSectionThreeQuestion
+    // const lessonSectionOneContents = <LessonContent lesson={selectedLessonSection1}/>
+    // // const lessonSectionOneQuestion = <LessonQuestion lesson={selectedLessonSection1}/>
+    // const lessonSectionTwoContents = <LessonContent lesson={selectedLessonSection2}/>
+    // // const lessonSectionTwoQuestion = <LessonQuestion lesson={selectedLessonSection2}/>
+    // const lessonSectionThreeContents = <LessonContent lesson={selectedLessonSection3}/>
+    // // const lessonSectionThreeQuestion = <LessonContent lesson={selectedLessonSection3}/>
     
-    // const elementZero = <Element props="Hello Mate, this is the first element" />;
-    // const elementOne = <Element props="This is the 2nd element mate" />;
-    // const elementTwo = <Element props="Third element now" />;
+    //map sections of selected lesson, creating an element for each content page, and its respective questions
+
     const elementList = []
 
-    elementList.push(lessonSectionOneContents)
-    // elementList.push(elementOne)
-    // elementList.push(elementTwo)
+    const sectionGenerator = function() {
+
+        if (selectedLesson) {
+            selectedLesson[0].sections
+                .forEach((section) => {
+                    const content = <LessonContent contents={section.contents} />
+                    elementList.push(content);
+
+                    const question = <LessonQuestion questions={section.questions} />
+                    elementList.push(question);
+                })            
+            };
+        };
+        
+    //Changes made:
+    //added LessonQuestion
+    //refactored LessonContent props and subsequent references
+    //SUGGESTION: Add a "summary" page after all the sections to display the score?
+    //SUGGESTION: This could be expanded later on to display which questions were right and wrong
+
+    sectionGenerator();
 
     return (
         <>
             <h1>BBC 5 Minute Learning Challenge</h1>
             <h2>Space</h2>
             <LessonSelector lessons={lessons} chooseLesson={chooseLesson}/>
-            <LessonElement />
             {elementList[elementState]}
             <button onClick={incrementState}>Next</button>
             <p>Click to see the next element</p>

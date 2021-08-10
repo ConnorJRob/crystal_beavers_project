@@ -1,15 +1,15 @@
 import React from 'react';
 
-const lessonContent = ({lesson}) => {
+const lessonContent = ({contents}) => {
 
-    if (lesson === null) {
+    if (contents === null) {
         return null
     }
 
     return(
         <>
-        {/* <h2>{lesson.lesson.section_1.contents.title}</h2>
-        <p>{lesson.lesson.section_1.contents.text}</p> */}
+        <h2>{contents.title}</h2>
+        <p>{contents.text}</p>
         </>
     )
 }
