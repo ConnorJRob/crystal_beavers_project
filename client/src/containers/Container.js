@@ -11,7 +11,7 @@ const Container = function() {
     const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjuection with the LessonSelector to define the currently selected lesson
     const [questionScore, setQuestionScore] = useState(0);
 
-
+    //g
     useEffect(() => { // this runs when the page loads
         getLessons() // it calls the get Lessons function from LessonServices
         .then((allLessons) => { // the data returned from getLessons is then use to setLessons to that array of data
