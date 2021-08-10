@@ -5,17 +5,16 @@ const Answers = function({answers}) {
     const allAnswers = answers.map((answer) => {
         return(
             <>
-                <form>
                     <label>{answer.text}</label>
                     <input type="radio" ></input>
-                </form>
             </>
         );
     });
 
+    //all radio inputs need to be wrapped in the one container
     return(
         <>
-        <p>{allAnswers}</p>
+       <form>{allAnswers}</form>
         </>
     )
 }
