@@ -23,17 +23,14 @@ const Container = function() {
         setSelectedLesson(lessons.filter(lesson => lesson_id === lesson._id)) // the filter function then returns ONLY the lesson with a matching _id from the lessons state - which becomes the selectedLesson
     };
 
-
     const advanceLesson = function() { 
         setElementState(elementState + 1);//this function increments the element state which allows us to progress through the lesson
     };
 
-    const questionSubmit = function (answersValue) {
-        setQuestionScore(questionScore + answersValue);
+    const questionSubmit = function (answerValue) {
+        setQuestionScore(questionScore + parseInt(answerValue));
+        advanceLesson();
     }
-
-    // console.log(advanceLesson)
-    //map sections of selected lesson, creating an element for each content page, and its respective questions
 
     const elementList = []
 
@@ -42,11 +39,11 @@ const Container = function() {
         if (selectedLesson) {
             selectedLesson[0].sections
                 .forEach((section) => {
-                    const content = <LessonContent contents={section.contents} />
+                    const content = <LessonContent contents={section.contents} advanceLesson={advanceLesson}/>
                     elementList.push(content);
 
                     section.questions.forEach(question => {
-                        const questionToAdd = <QuestionContainer question={question}/>
+                        const questionToAdd = <QuestionContainer question={question} questionSubmit={questionSubmit}/>
                         elementList.push(questionToAdd);
                     })
                     
@@ -68,7 +65,6 @@ const Container = function() {
             <h2>Space</h2>
             <LessonSelector lessons={lessons} chooseLesson={chooseLesson}/>
             {elementList[elementState]}
-            <button onClick={advanceLesson}>Continue</button>
         </>
         )
     

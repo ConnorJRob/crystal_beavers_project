@@ -1,6 +1,6 @@
 import React from 'react';
 
-const lessonContent = ({contents}) => {
+const lessonContent = ({contents, advanceLesson}) => {
 
     if (contents === null) {
         return null
@@ -10,6 +10,7 @@ const lessonContent = ({contents}) => {
         <>
         <h2>{contents.title}</h2>
         <p>{contents.text}</p>
+        <button onClick={advanceLesson}>Continue</button>
         </>
     )
 }

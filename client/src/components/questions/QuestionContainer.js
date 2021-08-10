@@ -2,21 +2,35 @@ import React, {useState} from "react";
 import Question from "./Question.js";
 import Answers from "./Answers.js";
 
-const QuestionContainer= function({question}) {
+const QuestionContainer= function({question, questionSubmit}) {
 
-    const [questionState, setQuestionState] = useState(0);
-    const [sectionScore, setSectionScore] = useState(0);
+    const [selectedAnswer, setSelectedAnswer] = useState(null);
 
-    const handleChange = function (event) {
-        setSectionScore(sectionScore + event.target.value);
+    const handleRadioSelect = function (event) {
+        setSelectedAnswer(event.target.value)
     }
+
+    const handleAnswerSubmit = function () {
+        questionSubmit(selectedAnswer);
+    }
+    
+    const allAnswers = question.answers.map((answer) => {
+        return(
+            <>
+                    <label>{answer.text}</label>
+                    <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect}></input>
+                    <br></br>
+            </>
+        );
+    });
 
     const displayQuestion = () => {
 
         return(
             <>
             <p>{question.text}</p>
-            <Answers answers={question.answers} />
+            <form>{allAnswers}</form>
+            <button onClick={handleAnswerSubmit}>Continue</button>
             </>
         )
     }
