@@ -6,7 +6,8 @@ const Answers = function({answers}) {
         return(
             <>
                     <label>{answer.text}</label>
-                    <input type="radio" ></input>
+                    <input type="radio" name="answer" value={answer.value}></input>
+                    <br></br>
             </>
         );
     });
