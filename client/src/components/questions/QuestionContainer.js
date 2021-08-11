@@ -14,12 +14,12 @@ const QuestionContainer= function({question, questionSubmit}) {
         } else {
             alert("Please select answer")
         }
-    }
+    };
 
     const clearForm = function(event) {
         event.preventDefault();
         event.target.reset();
-    }
+    };
     
     const allAnswers = question.answers.map((answer) => {
         return(
