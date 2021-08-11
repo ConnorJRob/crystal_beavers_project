@@ -1,6 +1,12 @@
 .selector-display{
     display: flex;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.687);
+    width: 30%;
+    margin-left:35%;
+    margin-right:35%;
+    border: 1px solid #0000008a;
+    border-radius: 10px;
 }
 
 #selector{

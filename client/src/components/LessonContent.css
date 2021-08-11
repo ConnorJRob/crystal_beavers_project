@@ -3,11 +3,15 @@
     margin-right: auto;
     max-width: 60%;
     display: grid;
-    grid-template-columns: 65%, 35%;
     grid-template-areas:
     "content-title      content-title"
     "content-text       content-image"
-    "continue-button    continue-button"
+    "continue-button    continue-button";
+    background-color: rgba(255, 255, 255, 0.687);
+    border: 1px solid #0000008a;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: sans-serif;
 }
 
 .content-title {
@@ -27,5 +31,6 @@
     max-width: 20%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
     grid-area: continue-button;
 }

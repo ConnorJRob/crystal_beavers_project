@@ -9,6 +9,8 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
         setSelectedAnswer(event.target.value) //the selectedAnswer state becomes the value of the radio button answer clicked (which we know to be either 0 or 1)
     }
 
+
+
     const handleAnswerSubmit = function () { // this function triggers when the submit button is clicked from within the answers form
         if (selectedAnswer) { // IF there is a selected answer, 
             questionSubmit(selectedAnswer); // it then rurns the questionSubmit function passed down from the container using selectedAnswer (either 0 or 1)
@@ -27,8 +29,9 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
             <>
                     {/* each answer is created with the following */}
                     <div class="answer">
-                    <label class="answer-text">{answer.text}</label> 
                     <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect} class="radio-button"></input>
+                    <label class="answer-text">{answer.text}</label> 
+                    
                     <br></br>
                     </div>
             </>
@@ -42,7 +45,7 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
             <p class="question">{question.text}</p>
             <form onSubmit={clearForm} name="answer-form">
                 <div class="answers">{allAnswers}</div>
-                <button for="answer-form" onClick={handleAnswerSubmit} class="continue-lesson-button">Continue</button>
+                <button for="answer-form" onClick={handleAnswerSubmit} id="continue-lesson-submit-button">Continue</button>
             </form>
             </>
         )

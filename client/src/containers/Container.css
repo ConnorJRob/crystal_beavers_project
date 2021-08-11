@@ -1,11 +1,15 @@
 #page-header {
     text-align: center;
+    color: white;
+    font-family: sans-serif;
 }
 
 #page-subheader {
     text-align: center;
+    color: white;
 }
 
 #lesson-title{
     text-align: center;
+    color: white;
 }
