@@ -17,7 +17,7 @@ const LessonSelector = function({lessons, chooseLesson, selectedLesson}) { //les
         <>
         <div class="selector-display">
         <p>Pick your Sub-Topic</p>
-        <select required onChange={handleChange}>
+        <select required onChange={handleChange} id="selector">
         {/* The first option given is a blank option, and is automatically selected on startup, but is also disabled so it can't be selected once changed */}
         <option selected disabled></option>
         {/* the other options come from the listOfLessons array defined above */}

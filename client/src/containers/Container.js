@@ -68,7 +68,7 @@ const Container = function() {
     if (selectedLesson === null) { // if seelected lesson is null, then create the lesson selector component, which is what will be displayed as selectorDisplay
         selectorDisplay = <LessonSelector lessons={lessons} chooseLesson={chooseLesson} selectedLesson={selectedLesson} key={selectedLesson}/>
     } else { //if there is a currently selected lesson, then display the lesson_title of the selected lesson as an H2 tag
-        selectorDisplay = <h2>{selectedLesson[0].lesson_title}</h2>
+        selectorDisplay = <h2 id="lesson-title">{selectedLesson[0].lesson_title}</h2>
     }
 
     return (

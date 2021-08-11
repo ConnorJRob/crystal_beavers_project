@@ -229,7 +229,7 @@ db.lessons.insertMany([
         {
             "lesson_title": "Black Holes",
         
-            "background_image": "https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1680&fit=bounds",
+            "background_image": "http://www.nasa.gov/sites/default/files/thumbnails/image/simulated_bh.jpg",
         
             
             "sections": [
@@ -336,7 +336,7 @@ db.lessons.insertMany([
                                                                 },
                                                                 {
                                                                 "text": "Heavier then Sun",
-                                                                "value": 0
+                                                                "value": 1
                                                                 },   
                                                             ]
                                                                     
@@ -346,7 +346,7 @@ db.lessons.insertMany([
         
                                                 "answers": [
                                                                 {
-                                                                "text": "Close to Earts Moon",
+                                                                "text": "Close to Earths Moon",
                                                                 "value": 0
                                                                 },
                                                                 {
@@ -363,7 +363,7 @@ db.lessons.insertMany([
                                                                 },
                                                                 {
                                                                 "text": "Near The Center Of Universe",
-                                                                "value": 0
+                                                                "value": 1
                                                                 },
                                                             
                                                             ]
@@ -400,7 +400,7 @@ db.lessons.insertMany([
             {
                 "lesson_title": "Stars",
         
-                "background_image": "https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1680&fit=bounds",
+                "background_image": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.esa.int%2Fvar%2Fesa%2Fstorage%2Fimages%2Fesa_multimedia%2Fimages%2F2020%2F07%2Fsolar_orbiter_s_first_views_of_the_sun5%2F22136942-2-eng-GB%2FSolar_Orbiter_s_first_views_of_the_Sun_pillars.gif&imgrefurl=https%3A%2F%2Fwww.esa.int%2FScience_Exploration%2FSpace_Science%2FSolar_Orbiter%2FSolar_Orbiter_s_first_views_of_the_Sun_image_gallery&tbnid=vVS58LFDRUHxpM&vet=12ahUKEwjlgPqOmqnyAhWSBhoKHfSUAbwQMygFegUIARDbAQ..i&docid=FYJXWK8vb1mDrM&w=1106&h=1106&q=sun%20image&ved=2ahUKEwjlgPqOmqnyAhWSBhoKHfSUAbwQMygFegUIARDbAQ",
         
                 
                 "sections": [
@@ -496,124 +496,76 @@ db.lessons.insertMany([
                                         },
                                         {
                                         "contents": {
-                                                    "title": "Solar System",
-                                                    "text": "Earth's Neighbours"
+                                                    "title": "Fun Facts about Stars ",
+                                                    "text": "Most of the stars in the universe are red dwarfs. They twinkle because of movement in the Earth's atmosphere. Many stars come in pairs called binary stars. There are some groupings with up to 4 stars. The smaller they are the longer they live. Giant stars are bright, but tend to burn out fast. The nearest star to Earth is Proxima Centauri. It is 4.2 light-years away, meaning you would have to travel at the speed of light for 4.2 years to get there. The Sun is around 4.5 billion years old."
                                                     },
         
                                         "questions": [
                                                     {
-                                                    "text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
+                                                    "text": "How old is our sun?",
         
                                                     "answers": [
                                                                     {
-                                                                    "text": "Earth",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Neptune",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Pluto",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Saturn",
+                                                                    "text": "4.5 billion years old",
                                                                     "value": 1
                                                                     },
                                                                     {
-                                                                    "text": "Mars",
+                                                                    "text": "3.2 billion years old",
                                                                     "value": 0
                                                                     },
                                                                     {
-                                                                    "text": "Mercury",
+                                                                    "text": "1 billion years old",
                                                                     "value": 0
                                                                     },
                                                                     {
-                                                                    "text": "Jupiter",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Venus",
+                                                                    "text": "10 million years old",
                                                                     "value": 0
                                                                     },
                                                                 ]
                                                                         
                                                     },
                                                     {
-                                                    "text": "What about the tiny planet closest to the Sun!",
+                                                    "text": "How far away is our nearest star?",
         
                                                     "answers": [
                                                                     {
-                                                                    "text": "Mars",
+                                                                    "text": "50 light years away ",
                                                                     "value": 1
                                                                     },
                                                                     {
-                                                                    "text": "Earth",
+                                                                    "text": "4.2 light years away",
                                                                     "value": 0
                                                                     },
                                                                     {
-                                                                    "text": "Pluto",
+                                                                    "text": "3 hour journey",
                                                                     "value": 0
                                                                     },                                                                    
                                                                     {
-                                                                    "text": "Mercury",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Jupiter",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Saturn",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Neptune",
-                                                                    "value": 0
-                                                                    },
-                                                                    {
-                                                                    "text": "Uranus",
+                                                                    "text": "Not that far!",
                                                                     "value": 0
                                                                     }
                                                                 ]
                                                         },
                                                     
                                                 {
-                                                "text": "And what about the one furthest from the sun!",
+                                                "text": "What are pairs of stars called?",
                                                 
                                                 "answers": [
                                                                 {
-                                                                "text": "Mercury",
+                                                                "text": "Final Stars",
                                                                 "value": 0
                                                                 },
                                                                 {
-                                                                "text": "Uranus",
+                                                                "text": "Sequel Stars",
                                                                 "value": 0
                                                                 },
                                                                 {
-                                                                "text": "Venus",
+                                                                "text": "End Stars",
                                                                 "value": 0
                                                                 },
                                                                 {
-                                                                "text": "Mars",
-                                                                "value": 0
-                                                                },
-                                                                {
-                                                                "text": "Neptune",
+                                                                "text": "Binary Stars",
                                                                 "value": 1
-                                                                },
-                                                                {
-                                                                "text": "Saturn",
-                                                                "value": 0
-                                                                },
-                                                                {
-                                                                "text": "Jupiter",
-                                                                "value": 0
-                                                                },
-                                                                {
-                                                                "text": "Earth",
-                                                                "value": 0
                                                                 }
                                                         ]
         

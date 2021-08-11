@@ -1,3 +1,11 @@
 .selector-display{
+    display: flex;
+    justify-content: center;
+}
 
+#selector{
+    height: 30%;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }

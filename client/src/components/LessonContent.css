@@ -1,10 +1,13 @@
 .lesson-content {
-    margin: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
     display: grid;
     grid-template-columns: 65%, 35%;
     grid-template-areas:
     "content-title      content-title"
     "content-text       content-image"
+    "content-text       content-text"
     "continue-button    continue-button"
 }
 
