@@ -8,17 +8,18 @@
     "content-title      content-title"
     "content-text       content-image"
     "continue-button    continue-button";
-    color: white;
+    background-color: rgba(255, 255, 255, 0.687);
+    border: 1px solid #0000008a;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .content-title {
     grid-area: content-title;
-    color: white;
 }
 
 .content-text{
     grid-area: content-text;
-        color: white;
 }
 
 .content-image{
@@ -30,5 +31,6 @@
     max-width: 20%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5px;
     grid-area: continue-button;
 }
