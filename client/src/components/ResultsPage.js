@@ -1,4 +1,5 @@
 import React from 'react';
+import './ResultsPage.css';
 
 const ResultsPage = function ({questionScore, potentialScore, returnHome}) { // is given questionScore, potentialScore and the returnHome function to use
     return(

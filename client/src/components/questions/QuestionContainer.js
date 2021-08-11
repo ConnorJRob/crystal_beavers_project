@@ -1,4 +1,5 @@
 import React, {useState} from "react"; //import useState
+import './QuestionContainer.css';
 
 const QuestionContainer= function({question, questionSubmit}) { //this function is given question and questionSubmit as props to be used
 

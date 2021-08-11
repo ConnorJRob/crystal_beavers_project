@@ -1,0 +1,26 @@
+.lesson-content {
+    margin: 10%;
+    display: grid;
+    grid-template-columns: 65%, 35%;
+    grid-template-areas:
+    "content-title      content-title"
+    "content-text       content-image"
+    "continue-button    continue-button"
+}
+
+.content-title {
+    grid-area: content-title;
+}
+
+.content-text{
+    grid-area: content-text;
+}
+
+.content-image{
+    grid-area: content-image;
+    background-color: red
+}
+
+.continue-lesson-button{
+    grid-area: continue-button;
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import './LessonSelector.css';
 
 const LessonSelector = function({lessons, chooseLesson, selectedLesson}) { //lessons array, chooseLesson function and selectedLesson object are passed down for LessonSelector to use
 
@@ -14,6 +15,7 @@ const LessonSelector = function({lessons, chooseLesson, selectedLesson}) { //les
 
     return(
         <>
+        <div class="selector-display">
         <p>Pick your Sub-Topic</p>
         <select required onChange={handleChange}>
         {/* The first option given is a blank option, and is automatically selected on startup, but is also disabled so it can't be selected once changed */}
@@ -21,6 +23,7 @@ const LessonSelector = function({lessons, chooseLesson, selectedLesson}) { //les
         {/* the other options come from the listOfLessons array defined above */}
             {listOfLessons}
         </select>
+        </div>
         </>
     )
 };

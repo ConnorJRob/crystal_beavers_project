@@ -4,6 +4,7 @@ import LessonContent from "../components/LessonContent.js";
 import QuestionContainer from "../components/questions/QuestionContainer.js";
 import {getLessons} from "../services/LessonServices.js";
 import ResultsPage from "../components/ResultsPage.js";
+import './Container.css';
 
 const Container = function() {
 
@@ -71,9 +72,8 @@ const Container = function() {
     }
 
     return (
-        <>
-            <h1>BBC 5 Minute Learning Challenge</h1>
-            <h2>Space</h2>
+        <>  <div id="page-header"><h1>BBC 5-Minute Learning Challenge</h1></div>
+            <h2 id="page-subheader">Space</h2>
             {selectorDisplay}
             {elementList[elementState]}
         </>
