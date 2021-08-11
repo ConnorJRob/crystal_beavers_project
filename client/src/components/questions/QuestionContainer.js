@@ -45,7 +45,7 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
             <p class="question">{question.text}</p>
             <form onSubmit={clearForm} name="answer-form">
                 <div class="answers">{allAnswers}</div>
-                <button for="answer-form" onClick={handleAnswerSubmit} class="continue-lesson-button">Continue</button>
+                <button for="answer-form" onClick={handleAnswerSubmit} id="continue-lesson-submit-button">Continue</button>
             </form>
             </>
         )
