@@ -26,10 +26,11 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
         return(
             <>
                     {/* each answer is created with the following */}
-                    <label>{answer.text} 
-                    <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect}></input>
-                    </label>
+                    <div class="answer">
+                    <label class="answer-text">{answer.text}</label> 
+                    <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect} class="radio-button"></input>
                     <br></br>
+                    </div>
             </>
         );
     });
@@ -38,10 +39,10 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
 
         return(
             <>
-            <p>{question.text}</p>
+            <p class="question">{question.text}</p>
             <form onSubmit={clearForm} name="answer-form">
-                {allAnswers}
-                <button for="answer-form" onClick={handleAnswerSubmit}>Continue</button>
+                <div class="answers">{allAnswers}</div>
+                <button for="answer-form" onClick={handleAnswerSubmit} class="continue-lesson-button">Continue</button>
             </form>
             </>
         )
@@ -50,7 +51,7 @@ const QuestionContainer= function({question, questionSubmit}) { //this function 
 
     return ( //finally the questionContainer simply displays the result of the displayQuestion() function
         <>
-        {displayQuestion()}
+        <div class="questions-answers">{displayQuestion()}</div>
         </>
     )
     

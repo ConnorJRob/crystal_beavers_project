@@ -7,7 +7,6 @@ db.lessons.insertMany([
         "lesson_title": "Earth",
 
         "background_image": "https://www.gannett-cdn.com/presto/2018/08/06/USAT/d7e9198a-b2fa-4ca6-b947-31c3751cc248-GettyImages-898660948.jpg?crop=5369,3020,x0,y0&width=3200&height=1680&fit=bounds",
-
         
         "sections": [
                         {
@@ -68,7 +67,7 @@ db.lessons.insertMany([
 
                                     "image": "an image url",
 
-                                    "text": "The atmosphere of the Earth consists of mostly Nitrogen and Oxygen, with trace amounts of other gases such as Argon, Carbon Dioxide and Water Vapour. The presence of plants has influenced the composition of the atmosphere due to photosynthesis - a process by which plants absorb Carbon Dioxide and release Oxygen. The upper layer of atmosphere is known as the Ozone Layer which blocks the harmful Ultraviolet radiation from the sun and permits life to flourish. Due to pollution, both naturally occuring and man made, the Ozone Layer is deteriorating. Our atmosphere facilitates a 'Greenhouse Effect'. It traps thermal energy radiated from the surface of the Earth preventing it from escaping to Space and allows our planet to maintain liveable temperatures. Without this effect the Earth would be too cold to support life. The pollution caused by humanity has had a large impact on the state of the Atmosphere and has caused an increase in the strength of the greenhouse effect and thus an increase in global temperature. This has had profound effects - disrupting the Earth's weather patterns, as well as accelerating the melting of Polar ice leading to rising sea levels. Some Facts about atmosphere: oxygen - 21%, nitrogen -78%, other - 1%. And some minerals of Earth! Mineral Structure: Silica - 60%, Alumnia 16%, Lime 6%, iron oxide 6%, magnesia 5%",
+                                    "text": "The atmosphere of the Earth consists of mostly Nitrogen and Oxygen, with trace amounts of other gases such as Argon, Carbon Dioxide and Water Vapour. The presence of plants has influenced the composition of the atmosphere due to photosynthesis - a process by which plants absorb Carbon Dioxide and release Oxygen. The upper layer of atmosphere is known as the Ozone Layer which blocks the harmful Ultraviolet radiation from the sun and permits life to flourish. Due to pollution, both naturally occuring and man made, the Ozone Layer is deteriorating. Our atmosphere facilitates a 'Greenhouse Effect'. It traps thermal energy radiated from the surface of the Earth preventing it from escaping to Space and allows our planet to maintain liveable temperatures. Without this effect the Earth would be too cold to support life. The pollution caused by humanity has had a large impact on the state of the Atmosphere and has caused an increase in the strength of the greenhouse effect and thus an increase in global temperature. This has had profound effects - disrupting the Earth's weather patterns, as well as accelerating the melting of Polar ice leading to rising sea levels. Some Facts about atmosphere: oxygen - 21%, nitrogen -78%, other - 1%. And some minerals of Earth! Mineral Structure: Silica - 60%, Alumnia 16%, Lime 6%, iron oxide 6%, magnesia 5%"
                                     },
                                         
                                     
@@ -106,7 +105,7 @@ db.lessons.insertMany([
 
                                 "questions": [
                                             {
-                                            "text": "Name planets in earth solar system! Try as many as you remember! Which is the 6th planet from the sun?",
+                                            "text": "Which is the 6th planet from the sun?",
 
                                             "answers": [
                                                             {
@@ -318,7 +317,7 @@ db.lessons.insertMany([
                                     {
                                     "contents": {
                                                 "title": "Fun Facts about black holes",
-                                                "text": "Fun Facts about black holes Black holes can have the mass of several million suns. They don't live forever, but slowly evaporate returning their energy to the universe. The center of a black hole, where all its mass resides, is a point called a singularity. Black holes differ from each other in mass and their spin. Other than that, they are all very similar. The black holes we know about tend to fit into two size categories: stellar size are around the mass of one star while supermassive are the mass of several millions of stars. The big ones are located at the centers of large galaxies,"
+                                                "text": "Fun Facts about black holes Black holes can have the mass of several million suns. They don't live forever, but slowly evaporate returning their energy to the universe. The center of a black hole, where all its mass resides, is a point called a singularity. Black holes differ from each other in mass and their spin. Other than that, they are all very similar. The black holes we know about tend to fit into two size categories: stellar size are around the mass of one star while supermassive are the mass of several millions of stars. The big ones are located at the centers of large galaxies."
                                                 },
         
                                     "questions": [
@@ -407,9 +406,7 @@ db.lessons.insertMany([
                                 {
                                 "contents": {
                                                 "title": "Overview",
-                                                "text": "Stars are giant spheres of superhot gas made up mostly of hydrogen and helium. Stars get so hot by burning hydrogen into helium in a process called nuclear fusion. This is what makes them so hot and bright. Our Sun is a star. There are many different types of stars. Stars that are in their main sequence normal stars are categorized by their color. The smallest stars are red and don't give off much of a glow. Medium size stars are yellow, like the Sun. The largest stars are blue and are hugely bright. The larger the main sequence star, the hotter and brighter they are.Main Sequence Star - Once a star, it will continue to burn energy and glow for billions of years. This is the state of the star for the majority of its life and is called the main sequence.
-
-                                        
+                                                "text": "Stars are giant spheres of superhot gas made up mostly of hydrogen and helium. Stars get so hot by burning hydrogen into helium in a process called nuclear fusion. This is what makes them so hot and bright. Our Sun is a star. There are many different types of stars. Stars that are in their main sequence normal stars are categorized by their color. The smallest stars are red and don't give off much of a glow. Medium size stars are yellow, like the Sun. The largest stars are blue and are hugely bright. The larger the main sequence star, the hotter and brighter they are.Main Sequence Star - Once a star, it will continue to burn energy and glow for billions of years. This is the state of the star for the majority of its life and is called the main sequence."
                                             },
                                                 
         
@@ -574,5 +571,5 @@ db.lessons.insertMany([
                                 }
                         ]
                 }, 
-    ]              
+        ]              
 );
