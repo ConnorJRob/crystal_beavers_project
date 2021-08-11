@@ -1,7 +1,7 @@
 use project;
 db.dropDatabase();
 
-db.placeholdername.insertOne(
+db.lessons.insertOne(
 
     {
         "lesson_title": "Earth",

@@ -16,7 +16,9 @@ const createRouter = function(collection) {
       res.json({ status: 500, error: err });
     });
   });
-
+  
+  
+  // this route is currently unused but in place for future expansion
   router.post('/', (req, res) => {
     const newData = req.body;
     collection
