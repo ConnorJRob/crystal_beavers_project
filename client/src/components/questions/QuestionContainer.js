@@ -1,30 +1,31 @@
-import React, {useState} from "react";
+import React, {useState} from "react"; //import useState
 
-const QuestionContainer= function({question, questionSubmit}) {
+const QuestionContainer= function({question, questionSubmit}) { //this function is given question and questionSubmit as props to be used
 
-    const [selectedAnswer, setSelectedAnswer] = useState(null);
+    const [selectedAnswer, setSelectedAnswer] = useState(null); //this container has a state that allows us to keep track of the selectedAnswer
 
-    const handleRadioSelect = function (event) {
-        setSelectedAnswer(event.target.value)
+    const handleRadioSelect = function (event) { //this function triggers when a radio button is selected from the available answers
+        setSelectedAnswer(event.target.value) //the selectedAnswer state becomes the value of the radio button answer clicked (which we know to be either 0 or 1)
     }
 
-    const handleAnswerSubmit = function () {
-        if (selectedAnswer) {
-            questionSubmit(selectedAnswer);
+    const handleAnswerSubmit = function () { // this function triggers when the submit button is clicked from within the answers form
+        if (selectedAnswer) { // IF there is a selected answer, 
+            questionSubmit(selectedAnswer); // it then rurns the questionSubmit function passed down from the container using selectedAnswer (either 0 or 1)
         } else {
-            alert("Please select answer")
+            alert("Please select answer") // however if the button is clicked while there IS NO selected answer, the question submit function will not trigger and an error message will be displayed instead
         }
     };
 
-    const clearForm = function(event) {
-        event.preventDefault();
-        event.target.reset();
+    const clearForm = function(event) { 
+        event.preventDefault();//this function clears the radio button form on the submit of the answers form
+        event.target.reset();// it also prevents the page from reloading as this would exit the lesson
     };
     
-    const allAnswers = question.answers.map((answer) => {
+    const allAnswers = question.answers.map((answer) => { // allAnswers takes the question prop given, then maps all the answers into a new array, which is html radio button inputs - we used allAnswers later to populate the answers form
         return(
             <>
-                    <label>{answer.text}
+                    {/* each answer is created with the following */}
+                    <label>{answer.text} 
                     <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect}></input>
                     </label>
                     <br></br>
@@ -32,9 +33,7 @@ const QuestionContainer= function({question, questionSubmit}) {
         );
     });
 
-    
-
-    const displayQuestion = () => {
+    const displayQuestion = () => { // this function takes the question text, then create a form for the answers where the input options come from the allAnswers array defined above
 
         return(
             <>
@@ -46,14 +45,9 @@ const QuestionContainer= function({question, questionSubmit}) {
             </>
         )
     }
-        // for each question
-        // display question text
-        // loop through answers for question
-        // for each answer, generate a radio input line
-        // each radio input line should display the answer option and hold the answer value (i.e 0 or 1)
-        // onChange of each radio option will update the state when progressing (integer/increment +=1)
 
-    return (
+
+    return ( //finally the questionContainer simply displays the result of the displayQuestion() function
         <>
         {displayQuestion()}
         </>
