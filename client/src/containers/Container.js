@@ -9,7 +9,7 @@ const Container = function() {
 
     const [elementState, setElementState] = useState(0); //sets up a state that tracks lesson stages - modifying this allows us to iterate through them
     const [lessons, setLessons] = useState([]); // this state stores the data from our api (lessons collection)
-    const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjuection with the LessonSelector to define the currently selected lesson
+    const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjunction with the LessonSelector to define the currently selected lesson
     const [questionScore, setQuestionScore] = useState(0);
     const [potentialScore, setPotentialScore] = useState(0);
 
@@ -27,6 +27,13 @@ const Container = function() {
     const advanceLesson = function() { 
         setElementState(elementState + 1);//this function increments the element state which allows us to progress through the lesson
     };
+
+    const returnHome = function() {
+        setSelectedLesson(null)
+        setElementState(0)
+        setQuestionScore(0)
+        setPotentialScore(0)
+    }
 
     const questionSubmit = function (answerValue) {
         setPotentialScore(potentialScore + 1)
@@ -50,7 +57,7 @@ const Container = function() {
                         //for each question add its answer values together and store in state 
                     })
                 })
-                const results = <ResultsPage questionScore={questionScore} potentialScore={potentialScore}/>
+                const results = <ResultsPage questionScore={questionScore} potentialScore={potentialScore} returnHome={returnHome}/>
                 elementList.push(results);
             };
         };
@@ -66,12 +73,17 @@ const Container = function() {
     // Work out the maximum possible score
 
     sectionGenerator();
+    
+    let selectorDisplay = null;
+    if (selectedLesson === null) {
+        selectorDisplay = <LessonSelector lessons={lessons} chooseLesson={chooseLesson} selectedLesson={selectedLesson} key={selectedLesson}/>
+    }
 
     return (
         <>
             <h1>BBC 5 Minute Learning Challenge</h1>
             <h2>Space</h2>
-            <LessonSelector lessons={lessons} chooseLesson={chooseLesson}/>
+            {selectorDisplay}
             {elementList[elementState]}
         </>
         )

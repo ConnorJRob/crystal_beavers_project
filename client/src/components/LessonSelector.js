@@ -1,10 +1,11 @@
 import React from 'react';
 import Lesson from './Lesson.js'
 
-const LessonSelector = function({lessons, chooseLesson}) {
+const LessonSelector = function({lessons, chooseLesson, selectedLesson}) {
 
     const listOfLessons = lessons.map((lesson) => { //listOfLessons creates a new array of Lesson objects, with the following properties pulled out
-        return <Lesson lesson={lesson} key={lesson._id} title={lesson.lesson_title}/>
+        return <option selected={selectedLesson && selectedLesson._id===lesson._id} value={lesson._id} key={lesson._id}>{lesson.lesson_title}</option>
+        // return <Lesson lesson={lesson} key={lesson._id} title={lesson.lesson_title} selected={selectedLesson && selectedLesson._id===lesson._id}/>
     })
 
     const handleChange = (event) => { //when the select option is changed, the chooseLesson function is called using the lessons _id

@@ -13,6 +13,11 @@ const QuestionContainer= function({question, questionSubmit}) {
     const handleAnswerSubmit = function () {
         questionSubmit(selectedAnswer);
     }
+
+    const clearForm = function(event) {
+        event.preventDefault();
+        event.target.reset();
+    }
     
     const allAnswers = question.answers.map((answer) => {
         return(
@@ -29,8 +34,10 @@ const QuestionContainer= function({question, questionSubmit}) {
         return(
             <>
             <p>{question.text}</p>
-            <form>{allAnswers}</form>
-            <button onClick={handleAnswerSubmit}>Continue</button>
+            <form onSubmit={clearForm} name="answer-form">
+                {allAnswers}
+                <button for="answer-form" onClick={handleAnswerSubmit}>Continue</button>
+            </form>
             </>
         )
     }

@@ -2,11 +2,12 @@ import React from "react";
 
 const Answers = function({answers}) {
 
-    const allAnswers = answers.map((answer) => {
+    const allAnswers = answers.map((answer, index) => {
+
         return(
             <>
                     <label>{answer.text}</label>
-                    <input type="radio" name="answer" value={answer.value}></input>
+                    <input type="radio" name={answer.text} value={answer.value}></input>
                     <br></br>
             </>
         );
