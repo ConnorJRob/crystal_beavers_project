@@ -1,22 +1,23 @@
 .questions-answers {
     max-width: 60%;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
+    color: white;
+    /* text-align: center; */
     display: grid;
-    grid-template-rows: 1fr, 1fr;
+    /* grid-template-rows: 1fr, 1fr;
     grid-template-areas:
     "question           question"
     "answer-container   answer-container"
-    "continue-button    continue-button"
+    "continue-button    continue-button" */
 }
 
 .continue-lesson-button{
-    max-width: 20%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-top: 5px;
     grid-area: continue-button;
 }
 
+/* 
 .question{
     grid-area: question;
     text-align: center;
@@ -47,4 +48,4 @@
 
 .answer-text {
     grid-area: answer-text;
-}
+}  */

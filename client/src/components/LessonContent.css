@@ -7,15 +7,18 @@
     grid-template-areas:
     "content-title      content-title"
     "content-text       content-image"
-    "continue-button    continue-button"
+    "continue-button    continue-button";
+    color: white;
 }
 
 .content-title {
     grid-area: content-title;
+    color: white;
 }
 
 .content-text{
     grid-area: content-text;
+        color: white;
 }
 
 .content-image{

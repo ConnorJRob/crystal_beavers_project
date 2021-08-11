@@ -353,7 +353,7 @@ db.lessons.insertMany([
                                                                 "value": 0
                                                                 },
                                                                 {
-                                                                "text": "On Staurns Disc",
+                                                                "text": "On Saturns Disc",
                                                                 "value": 0
                                                                 },                                                                    
                                                                 {
