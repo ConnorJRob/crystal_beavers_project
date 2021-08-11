@@ -3,6 +3,7 @@ import LessonSelector  from "../components/LessonSelector.js";
 import LessonContent from "../components/LessonContent.js";
 import QuestionContainer from "../components/questions/QuestionContainer.js";
 import {getLessons} from "../services/LessonServices.js";
+import ResultsPage from "../components/ResultsPage.js";
 
 const Container = function() {
 
@@ -10,8 +11,8 @@ const Container = function() {
     const [lessons, setLessons] = useState([]); // this state stores the data from our api (lessons collection)
     const [selectedLesson, setSelectedLesson] = useState(null); // this state is used in conjuection with the LessonSelector to define the currently selected lesson
     const [questionScore, setQuestionScore] = useState(0);
+    const [potentialScore, setPotentialScore] = useState(0);
 
-    //g
     useEffect(() => { // this runs when the page loads
         getLessons() // it calls the get Lessons function from LessonServices
         .then((allLessons) => { // the data returned from getLessons is then use to setLessons to that array of data
@@ -28,6 +29,7 @@ const Container = function() {
     };
 
     const questionSubmit = function (answerValue) {
+        setPotentialScore(potentialScore + 1)
         setQuestionScore(questionScore + parseInt(answerValue));
         advanceLesson();
     }
@@ -44,10 +46,12 @@ const Container = function() {
 
                     section.questions.forEach(question => {
                         const questionToAdd = <QuestionContainer question={question} questionSubmit={questionSubmit}/>
-                        elementList.push(questionToAdd);
+                        elementList.push(questionToAdd);    
+                        //for each question add its answer values together and store in state 
                     })
-                    
-                })            
+                })
+                const results = <ResultsPage questionScore={questionScore} potentialScore={potentialScore}/>
+                elementList.push(results);
             };
         };
         
@@ -56,6 +60,10 @@ const Container = function() {
     //refactored LessonContent props and subsequent references
     //SUGGESTION: Add a "summary" page after all the sections to display the score?
     //SUGGESTION: This could be expanded later on to display which questions were right and wrong
+
+    // Add to sectionGenerator:
+    // Results page inserted at last index of elementList
+    // Work out the maximum possible score
 
     sectionGenerator();
 
