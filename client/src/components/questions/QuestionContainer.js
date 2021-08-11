@@ -1,6 +1,4 @@
 import React, {useState} from "react";
-import Question from "./Question.js";
-import Answers from "./Answers.js";
 
 const QuestionContainer= function({question, questionSubmit}) {
 
@@ -11,7 +9,11 @@ const QuestionContainer= function({question, questionSubmit}) {
     }
 
     const handleAnswerSubmit = function () {
-        questionSubmit(selectedAnswer);
+        if (selectedAnswer) {
+            questionSubmit(selectedAnswer);
+        } else {
+            alert("Please select answer")
+        }
     }
 
     const clearForm = function(event) {
@@ -22,12 +24,15 @@ const QuestionContainer= function({question, questionSubmit}) {
     const allAnswers = question.answers.map((answer) => {
         return(
             <>
-                    <label>{answer.text}</label>
+                    <label>{answer.text}
                     <input type="radio" name="answer" value={answer.value} onChange={handleRadioSelect}></input>
+                    </label>
                     <br></br>
             </>
         );
     });
+
+    
 
     const displayQuestion = () => {
 

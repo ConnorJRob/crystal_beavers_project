@@ -7,7 +7,7 @@ const Answers = function({answers}) {
         return(
             <>
                     <label>{answer.text}</label>
-                    <input type="radio" name={answer.text} value={answer.value}></input>
+                    <input type="radio" name="answer" value={answer.value}></input>
                     <br></br>
             </>
         );

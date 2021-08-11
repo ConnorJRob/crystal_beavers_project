@@ -8,7 +8,7 @@ const lessonContent = ({contents, advanceLesson}) => {
 
     return(
         <>
-        <h2>{contents.title}</h2>
+        <h3>{contents.title}</h3>
         <p>{contents.text}</p>
         <button onClick={advanceLesson}>Continue</button>
         </>

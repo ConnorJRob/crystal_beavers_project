@@ -77,6 +77,8 @@ const Container = function() {
     let selectorDisplay = null;
     if (selectedLesson === null) {
         selectorDisplay = <LessonSelector lessons={lessons} chooseLesson={chooseLesson} selectedLesson={selectedLesson} key={selectedLesson}/>
+    } else {
+        selectorDisplay = <h2>{selectedLesson[0].lesson_title}</h2>
     }
 
     return (

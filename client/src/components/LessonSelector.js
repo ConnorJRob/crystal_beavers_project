@@ -1,5 +1,4 @@
 import React from 'react';
-import Lesson from './Lesson.js'
 
 const LessonSelector = function({lessons, chooseLesson, selectedLesson}) {
 
