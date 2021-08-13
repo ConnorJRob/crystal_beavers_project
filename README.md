@@ -7,7 +7,7 @@ The BBC are looking to improve their online offering of educational content by d
 The app requires:
 
 - An API from which it will fetch information to populate each page of lesson content
-- The ability to track the results of each question and display the
+- The ability to track the results of each question and display them for the user
 
 The user of the app should be able to:
 
